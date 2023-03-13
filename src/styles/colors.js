@@ -1,8 +1,13 @@
 export const colors = {
-  primary: '#219653',
-  secondary: '#d9f397',
-  black: '#000000',
-  white: '#ffffff',
-  light: '#f2f3ff',
-  darkTransparent: 'rgba(0, 0, 0, 0.5)'
+  background: '#050816',
+  backgroundLight: '#1B2138',
+  primary: '#0EE7B7',
+  secondary: '#7AC7E3',
+  gradient: 'linear-gradient(225deg, #313860 0%, #11172B 100%);',
+  text: '#848DA0',
+  textHighlight: '#444B5B',
+  textLight: '#C4C4C4',
+  border: '#313958',
+  inputBackground: '#1E253E',
+  error: '#d45d5d'
 }

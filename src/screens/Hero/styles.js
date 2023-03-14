@@ -1,22 +1,24 @@
 import styled from 'styled-components'
 
 export const ScreenContainer = styled.div`
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
-  background-image: url('./images/herobg.png');
+  background-color: ${({ theme }) => theme.colors.background};
   background-position: center;
   background-size: cover;
 `
 export const Herocontainer = styled.div`
   display: flex;
-  height: 90%;
+  height: 100%;
   width: 100%;
   justify-content: center;
 `
 export const HeroSection = styled.div`
   display: flex;
   height: 100%;
-  width: 90%;
+  width: 100%;
+  padding: 0 150px;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.border};
 `
 export const ImageContainer = styled.section`
   display: flex;
@@ -26,11 +28,8 @@ export const ImageContainer = styled.section`
   justify-content: center;
 `
 export const Image = styled.img`
-  height: 500px;
-  width: auto;
-  border: 1px solid;
+  height: auto;
   border-color: ${({ theme }) => theme.colors.secondary};
-  border-radius: 50%;
 `
 
 export const InfosContainer = styled.section`

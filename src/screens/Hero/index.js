@@ -1,5 +1,5 @@
 import { Header, Title, Subtitle } from 'components'
-import { Card } from 'components/molecules/Card'
+import { Card } from 'components/molecules/CodeCard'
 import {
   Herocontainer,
   HeroSection,
@@ -16,14 +16,14 @@ export const HomeScreen = () => {
       <Herocontainer>
         <HeroSection>
           <ImageContainer>
-            <Image src="/images/avatar.png" />
+            <Image />
           </ImageContainer>
           <InfosContainer>
             <Title
               fontSize="104"
               align
               color={({ theme }) => theme.colors.primary}
-              mb="36"
+              mb="0"
               mt="56"
             >
               Olá
@@ -31,7 +31,7 @@ export const HomeScreen = () => {
             <Subtitle
               fontSize="48"
               w="600"
-              mb="28"
+              mb="0"
               fontWeight="300"
               align
               color={({ theme }) => theme.colors.secondary}

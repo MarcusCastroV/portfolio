@@ -1,2 +1,4 @@
 export * from './Navbar'
-export * from './Card'
+export * from './CodeCard'
+export * from './ProjectCard'
+export * from './HabilityCard'

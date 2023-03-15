@@ -6,5 +6,5 @@ export const ProjectContainer = styled.div`
   padding: 0 200px;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.background};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `

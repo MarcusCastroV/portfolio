@@ -11,9 +11,9 @@ export const ProjectCard = ({
   GithubLink
 }) => {
   return (
-    <Projeto>
+    <Projeto data-aos="fade-left">
       <ImageContent src={`./images/${name}.png`} />
-      <InfoContainer>
+      <InfoContainer data-aos="fade-up">
         <Title
           fontSize="36"
           mb="30"

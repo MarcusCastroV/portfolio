@@ -13,7 +13,7 @@ export const HomeScreen = () => {
   return (
     <ScreenContainer>
       <Header />
-      <Herocontainer>
+      <Herocontainer data-aos="fade-up" id="home">
         <HeroSection>
           <ImageContainer>
             <Image />
@@ -39,6 +39,7 @@ export const HomeScreen = () => {
               Me chamo Marcus
             </Subtitle>
             <Card
+
               comentario="// Apresentação"
               tag="dados"
               desc1="Nome:"

@@ -1,19 +1,26 @@
 import { Title, Subtitle } from 'components'
-import { Li, SkillCard, Ul } from './styles'
+import { Li, SkillCard, SkillIcon, SkillList, Ul } from './styles'
 
 const NomeItem = (props) => {
   return <Li>{props.nome}</Li>
 }
 
-// Componente que representa a lista de nomes
-export const NomeLista = (props) => {
-  const nomes = props.nomes
-  const itensLista = nomes.map((nome) => <NomeItem key={nome} nome={nome} />)
+// Componente que representa a lista de skills
+export const Cards = (props) => {
+  const skills = props.skills
+  const itensLista = skills.map((nome) => <NomeItem key={nome} nome={nome} />)
   return (
     <SkillCard>
-      <Title>Habilidades Gerais</Title>
-      <Subtitle> Tecnologias que uso no dia a dia na programação</Subtitle>
-      <Ul>{itensLista}</Ul>
+      <SkillIcon src={`./images/${props.icon}.png`} />
+      <Title mt="20" mb="20">
+        {props.title}
+      </Title>
+      <Subtitle mw="234">
+        {props.subtitle}
+      </Subtitle>
+      <SkillList>
+        <Ul>{itensLista}</Ul>
+      </SkillList>
     </SkillCard>
   )
 }
